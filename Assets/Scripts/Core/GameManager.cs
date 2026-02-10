@@ -54,14 +54,14 @@ namespace CombatGame.Core
                 case GameState.Playing:
                     Time.timeScale = gameSpeed;
                     break;
-                case GameState.Paused:
-                    Time.timeScale = 0f;
-                    break;
                 case GameState.GameOver:
                     Time.timeScale = 0f;
                     break;
-            }
-        }
+            }   case Gamestate.settings:
+                     Basic:Hipfire
+                           :Hold to scope and shoot
+        }.           Graphics:Low. Medium. High. Very High. Max.
+                     Frame Rate: Low. Medium. High. Very High. Max. ultra.
 
         public GameState GetCurrentGameState() => currentGameState;
 
